@@ -1,0 +1,24 @@
+<form [formGroup]="loginForm" (ngSubmit)="onloginHandler()">
+  <p-messages [(value)]="msgs"></p-messages>
+<p-panel header="Login Panel">
+  <div style="margin-top:30px">
+  <span class="ui-float-label">
+    <input id="float-input" type="text" formControlName="userId" size="30" pInputText class="ng-dirty ng-invalid"> 
+    <label for="float-input">User Id</label>
+    <!--<p-message severity="error" text="Field is required"></p-message>-->
+ </span>
+ 
+</div>
+<div style="margin-top:30px">
+ <span class="ui-float-label">
+  <input id="float-input" type="password" formControlName="password" size="30" pInputText class="ng-dirty ng-invalid" required> 
+  <label for="float-input">Password</label>
+  <!--<p-message severity="error" text="Field is required"></p-message>-->
+</span>
+
+</div>
+<div style="margin-top:30px">
+<p-button type="submit" label="Sign In" ></p-button>
+</div>
+</p-panel>
+</form>

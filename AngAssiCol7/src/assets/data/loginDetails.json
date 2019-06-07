@@ -1,0 +1,6 @@
+{
+    "data": [
+        {"name": "Hemanth", "age": 29, "married": true, "password":"a101", "userId":"a101"},
+        {"name": "Kavitha", "age": 25, "married": true, "password":"a102", "userId":"a102"}
+    ]
+}
