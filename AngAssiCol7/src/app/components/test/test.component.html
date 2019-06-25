@@ -1,0 +1,33 @@
+<table border="1">
+  <th>Functionality</th>
+ <ng-template [ngIf]="coworkerDetails" *ngFor="let a of coworkerDetails">
+    <th>  
+  {{a.storeNumber}}
+    </th>
+ </ng-template>
+ <tr>
+   <td>availability-a</td>
+ <ng-template [ngIf]="coworkerDetails" *ngFor="let b of coworkerDetails">
+    <td>  
+  <ng-template [ngIf]="b.coworkerFunctionalities" *ngFor="let c of b.coworkerFunctionalities"> 
+  <ng-template [ngIf]="c.functionality == 'availability-a'">
+  <input type="checkbox">
+  </ng-template>
+</ng-template>
+    </td>
+ </ng-template>
+ </tr>
+ <tr>
+    <td>workschedule-a</td>
+  <ng-template [ngIf]="coworkerDetails" *ngFor="let b of coworkerDetails">
+     <td>  
+   <ng-template [ngIf]="b.coworkerFunctionalities" *ngFor="let c of b.coworkerFunctionalities"> 
+   <ng-template [ngIf]="c.functionality == 'workschedule-a'">
+   <input type="checkbox">
+   </ng-template>
+ </ng-template>
+     </td>
+  </ng-template>
+  </tr>
+
+</table>

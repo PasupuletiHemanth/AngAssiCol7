@@ -20,12 +20,14 @@ import { LoginComponent } from './components/login/login.component';
 import { OrdersComponent } from './components/orders/orders.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { TestComponent } from './components/test/test.component';
 
 const APP_ROUTES: Routes = [
   //syntax : path should have string and the component when that path is hit
   { path: 'about', component: AboutComponent },
   { path: 'login', component: LoginComponent },
-  { path: 'orders', component: OrdersComponent }
+  { path: 'orders', component: OrdersComponent },
+  { path: 'test', component: TestComponent }
   ];
 
 @NgModule({
@@ -35,7 +37,8 @@ const APP_ROUTES: Routes = [
     HeaderComponent,
     FooterComponent,
     AboutComponent,
-    OrdersComponent
+    OrdersComponent,
+    TestComponent
   ],
   imports: [
     BrowserModule,
